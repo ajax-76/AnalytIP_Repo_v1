@@ -10,7 +10,9 @@ from django.http import HttpResponse
 
 
 def Hello(request):
-    return HttpResponse('Hello world')
+    return render(request,'app/Hello.html')
+
+
 
 def home(request):
     """Renders the home page."""
