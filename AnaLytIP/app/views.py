@@ -51,3 +51,4 @@ def about(request):
             'year':datetime.now().year,
         }
     )
+
