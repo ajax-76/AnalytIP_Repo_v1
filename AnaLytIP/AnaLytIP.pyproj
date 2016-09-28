@@ -27,6 +27,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="app\FileRead.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app\forms.py" />
     <Compile Include="app\models.py" />
     <Compile Include="app\tests.py" />
@@ -42,6 +45,7 @@
   <ItemGroup>
     <Folder Include="app\" />
     <Folder Include="app\migrations\" />
+    <Folder Include="app\DataFiles\" />
     <Folder Include="app\static\" />
     <Folder Include="app\static\app\" />
     <Folder Include="app\static\app\content\" />
@@ -52,6 +56,7 @@
     <Folder Include="AnaLytIP\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\DataFiles\File.xlsx" />
     <Content Include="app\templates\app\FileUpload.html" />
     <Content Include="app\templates\app\Hello.html" />
     <Content Include="requirements.txt" />

@@ -21,6 +21,8 @@ urlpatterns = [
     url(r'^contact$', app.views.contact, name='contact'),
     url(r'^about', app.views.about, name='about'),
     url(r'^Hello',app.views.Hello,name='Hello'),
+    url(r'^FileUpload',app.views.FileUpload,name='FileUpload'),
+     url(r'^Upload',app.views.Upload,name='Upload'),
     url(r'^login/$',
         django.contrib.auth.views.login,
         {

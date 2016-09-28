@@ -3,24 +3,36 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script>
-        var uplaod = function () {
-            $.ajax('/Upload').done(function () {
-                alert("File Uploaded");
-            }).fail(function () {
-                alert("Something failed");
-            });
-        };
-        $('#upload').click(function () {
-            uplaod();
-        });
-    </script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   
     <title></title>
 </head>
 <body>
     <p>Upload start Up file</p>
-    <input type="file" name="file" />
-    <button type="submit" id="upload"/>
+    <form action="/Upload" method="post" enctype="multipart/form-data">{% csrf_token %}
+        <input type="file" name="file" />
+        <input type="submit" id="upload"/>
+    </form>
+    
+     <script>
+        //var uplaod = function () {
+        //    $.post('/Upload', function () {
+        //        alert("request sent");
+        //    }).done(function () {
+        //        alert("suucess")
+        //    }).fail(function () {
+        //        alert("falureyyy")
+        //    });
+        //};
+        //$('#upload').click(function () {
+        //    $.post('/Upload', function (data, status) {
+        //        alert('Data: ' + data + '\nStatus: '+ status);
+        //    }).done(function () {
+        //        alert('success');
+        //    }).fail(function () {
+        //        alert('Fail');
+        //    })
+        //});
+    </script>
 </body>
 </html>
