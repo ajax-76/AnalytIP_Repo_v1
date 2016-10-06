@@ -27,6 +27,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="app\DataFetchers\DataCrawler.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app\FileRead.py">
       <SubType>Code</SubType>
     </Compile>
@@ -46,6 +49,7 @@
     <Folder Include="app\" />
     <Folder Include="app\migrations\" />
     <Folder Include="app\DataFiles\" />
+    <Folder Include="app\DataFetchers\" />
     <Folder Include="app\static\" />
     <Folder Include="app\static\app\" />
     <Folder Include="app\static\app\content\" />
